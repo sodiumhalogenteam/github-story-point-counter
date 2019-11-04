@@ -1,7 +1,7 @@
 let isTableHeaderFound = false
 let countToStop = 0
 do{
-  if(document.querySelector('.Box-row')[0]) isTableHeaderFound = true
+  if(document.querySelector('.Box-row')) isTableHeaderFound = true
   countToStop++
 } while(!isTableHeaderFound || countToStop < 25)
 
