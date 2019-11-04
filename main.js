@@ -3,7 +3,7 @@ let countToStop = 0
 do{
   if(document.querySelector('.table-list-header-toggle')) isTableHeaderFound = true
   countToStop++
-} while(!isTableHeaderFound || countToStop > 25)
+} while(!isTableHeaderFound || countToStop < 25)
 
 if(isTableHeaderFound) {
   let pointsCount = 0
