@@ -1,7 +1,7 @@
 let isTableHeaderFound = false
 let countToStop = 0
 do{
-  if(document.querySelector('.table-list-header-toggle')) isTableHeaderFound = true
+  if(document.querySelector('.Box-row')[0]) isTableHeaderFound = true
   countToStop++
 } while(!isTableHeaderFound || countToStop < 25)
 
