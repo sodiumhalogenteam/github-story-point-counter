@@ -1,6 +1,14 @@
+element.classList.contains(class);
+
+let isTableHeaderFound = false;
+
+do{
+  if(document.querySelector('.table-list-header-toggle')) isTableHeaderFound = true
+} while(!isTableHeaderFound)
+
 let pointsCount = 0
 document.querySelectorAll('.IssueLabel').forEach(function(label){
-	if(label.innerText.includes('size')) pointsCount += parseInt(label.innerText.replace('size: ', ''))
+  if(label.innerText.includes('size')) pointsCount += parseInt(label.innerText.replace('size: ', ''))
 })
 console.log(pointsCount)
 const countElement = document.createElement('span')
